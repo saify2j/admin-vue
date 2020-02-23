@@ -11,3 +11,7 @@ $fa-font-path: "../webfonts";
 @import '@fortawesome/fontawesome-free/scss/brands.scss';
 @import '@fortawesome/fontawesome-free/scss/solid.scss';
 
+.router-link-exact-active {
+    background-color: teal;
+    color: white !important;    
+}

@@ -83,28 +83,33 @@ body{
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <router-link to="/dashboard" class="nav-link">
                 <i class="fas fa-tachometer-alt"></i>
                   <p>Dashboard</p>
-                </a>
+                </router-link>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <router-link to="/userprofile" class="nav-link">
                 <i class="fas fa-cog"></i>
-                  <p>Management</p>
-                </a>
+                  <p>Profile Management</p>
+                </router-link>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <router-link to="/charts" class="nav-link">
                 <i class="fas fa-chart-pie"></i>
                   <p>Charts</p>
-                </a>
+                </router-link>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
+              <li class="nav-item">                
+                <a href="{{ route('logout') }}" class="nav-link"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
                 <i class="fas fa-sign-out-alt"></i>
                   <p>Log Out</p>
                 </a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
               </li>
 
         </ul>
@@ -120,7 +125,7 @@ body{
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
-        
+      <router-view></router-view>
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->
@@ -151,7 +156,7 @@ body{
 
 <!-- REQUIRED SCRIPTS -->
 
-
+<script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="/js/app.js"></script>
 </body>
 </html>
