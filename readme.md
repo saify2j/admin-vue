@@ -1,8 +1,8 @@
-Installation Commands\n
+Installation Commands<br/>
 
--- composer install\n
--- npm install\n
-Make database as found from the env file\n
--- php artisan migrate: fresh\n
--- npm run watch\n
--- php artisan serve\n
+-- composer install<br/>
+-- npm install<br/>
+Make database as found from the env file<br/>
+-- php artisan migrate: fresh<br/>
+-- npm run watch<br/>
+-- php artisan serve<br/>
