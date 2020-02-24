@@ -14,6 +14,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="/css/app.css">
+  <link rel="stylesheet" href="/css/style.css">
+
 
 </head>
 <body class="hold-transition sidebar-mini sidebar-collapse">

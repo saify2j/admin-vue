@@ -22,6 +22,10 @@ const routes= [
         path:'/charts', component: require('./components/Charts.vue').default
 
     },
+    {
+        path:'/collapseExample', component: require('./components/Card.vue').default
+
+    }
 
 ]
 const router = new VueRouter({
